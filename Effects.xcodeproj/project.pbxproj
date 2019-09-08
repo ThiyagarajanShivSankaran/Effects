@@ -11,6 +11,7 @@
 		964F88CC23254C9B00387599 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 964F88C923254C9B00387599 /* LICENSE */; };
 		964F88CD23254C9B00387599 /* Effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 964F88CA23254C9B00387599 /* Effects.h */; };
 		964F88D223254CA600387599 /* EffectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F88D023254CA600387599 /* EffectsTests.swift */; };
+		964F88D52325515700387599 /* Effects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F88D42325515700387599 /* Effects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		964F88CB23254C9B00387599 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964F88D023254CA600387599 /* EffectsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectsTests.swift; sourceTree = "<group>"; };
 		964F88D123254CA600387599 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964F88D42325515700387599 /* Effects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				964F88C923254C9B00387599 /* LICENSE */,
 				964F88CA23254C9B00387599 /* Effects.h */,
 				964F88CB23254C9B00387599 /* Info.plist */,
+				964F88D42325515700387599 /* Effects.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				TargetAttributes = {
 					964F88AD23254AE000387599 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					964F88B623254AE100387599 = {
 						CreatedOnToolsVersion = 10.3;
@@ -199,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964F88D52325515700387599 /* Effects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +351,7 @@
 		964F88C323254AE100387599 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -364,6 +370,7 @@
 				PRODUCT_NAME = Effects;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +379,7 @@
 		964F88C423254AE100387599 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -398,6 +406,7 @@
 		964F88C623254AE100387599 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EffectsTests/Info.plist;
@@ -416,6 +425,7 @@
 		964F88C723254AE100387599 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EffectsTests/Info.plist;
