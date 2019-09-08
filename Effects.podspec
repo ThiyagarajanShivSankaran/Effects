@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.license = 'MIT'
   s.summary = 'An effects framework for iOS.'
-  s.homepage = 'http://cosmicmind.com'
+  s.homepage = 'https://www.cosmicmind.com'
   s.social_media_url = 'https://www.facebook.com/cosmicmindcom'
   s.authors = { 'CosmicMind, Inc.' => 'support@cosmicmind.com' }
   s.source = { :git => 'https://github.com/CosmicMind/Effects.git', :tag => s.version }
